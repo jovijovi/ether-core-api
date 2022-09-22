@@ -1,0 +1,46 @@
+{
+  "name": "@jovijovi/ether-core-api",
+  "version": "0.1.0",
+  "description": "HTTP APIs for @jovijovi/ether-core",
+  "author": "jovijovi <mageyul@hotmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "blockchain",
+    "ethereum",
+    "ether",
+    "ether-core-api"
+  ],
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovijovi/ether-core-api.git"
+  },
+  "scripts": {
+    "clean": "rm -rf ./dist/*",
+    "test": "jest --coverage --forceExit",
+    "build": "yarn clean && tsc --build",
+    "clean-pub": "rm -rf ./publish/* && mkdir -p ./publish",
+    "prepub": "yarn clean-pub && yarn build && cp -ap ./dist/lib ./publish/lib && cp -ap LICENSE ./publish/ && cp -ap package.json ./publish/ && cp -ap README.md ./publish/"
+  },
+  "dependencies": {
+    "@jovijovi/ether-core": "^0.5.2",
+    "@jovijovi/pedrojs-common": "1.1.15",
+    "@jovijovi/pedrojs-network-http": "1.1.19",
+    "lru-cache": "7.14.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.3",
+    "@types/jest": "29.0.3",
+    "@types/node": "18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "jest": "29.0.3",
+    "ts-jest": "29.0.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.8.3"
+  }
+}

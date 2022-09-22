@@ -1,0 +1,28 @@
+cluster:
+  name: cluster-name
+  id: f3f1ebf0-2561-4563-8ba8-999ff0936680
+  description: 'cluster description'
+
+network:
+  ip: 0.0.0.0
+  httpServer:
+    enable: true
+    port: 8080
+  httpsServer:
+    enable: false
+    port: 8081
+    mutualTLS: false
+
+serviceInfo:
+  version: v1
+  hostName: HostName
+  serviceName: ether-core-api
+  processName: ether-core-api
+  ip: 127.0.0.1
+  port: 8080
+  tags:
+    - microservice
+  id: a905443b-2143-4814-9e28-f1b0e0b52249
+
+log:
+  level: TRACE
