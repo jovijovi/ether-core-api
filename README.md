@@ -4,7 +4,7 @@
 [![GitHub Actions](https://github.com/jovijovi/ether-core-api/workflows/Test/badge.svg)](https://github.com/jovijovi/ether-core-api)
 [![Coverage](https://img.shields.io/codecov/c/github/jovijovi/ether-core-api?label=\&logo=codecov\&logoColor=fff)](https://codecov.io/gh/jovijovi/ether-core-api)
 
-HTTP APIs for @jovijovi/ether-core.
+HTTP APIs for [@jovijovi/ether-core](https://www.npmjs.com/package/@jovijovi/ether-core).
 
 ## Philosophy
 
@@ -12,12 +12,12 @@ HTTP APIs for @jovijovi/ether-core.
 
 ## Features
 
-- HTTP RESTFul APIs for @jovijovi/ether-core package.
+- HTTP RESTFul APIs for [@jovijovi/ether-core](https://www.npmjs.com/package/@jovijovi/ether-core) package.
 
 ## Development Environment
 
-- typescript `4.8.3`
-- node `v16.17.0`
+- typescript `4.8.4`
+- node `v16.17.1`
 - ts-node `v10.9.1`
 - yarn `v1.22.19`
 
